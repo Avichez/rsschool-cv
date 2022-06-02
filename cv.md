@@ -53,6 +53,6 @@ console.log(binaryArrayToNumber([0, 1, 1, 0]));
 
 ## Languages
 
-**Russian** - Native
-**Ukrainian** - Native
-**English** - Intermediate
+- **Russian** - Native
+- **Ukrainian** - Native
+- **English** - Intermediate
