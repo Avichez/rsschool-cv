@@ -1,1 +1,1 @@
-Here is My [CV](https://avichez.github.io/rsschool-cv/cv)
+https://avichez.github.io/rsschool-cv/
