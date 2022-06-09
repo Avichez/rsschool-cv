@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
   <title>My CV</title>
@@ -12,7 +15,139 @@
 
 <body>
   <div class="wrapper">
+    <div class="container">
+      <header>
+        <div class="title__block">
+          <h1>Ilin <br> BOGDAN</h1>
+          <span class="divider"></span>
+          <h2>
+            Hello there, I'm a <br>
+            <strong>FrontEnd Developer</strong><br>
+            Based in Ukraine, <br>
+            Odessa
+          </h2>
+        </div>
+        <div class="profile">
+          <div class="profile__image">
+            <img src="./img/profilePhoto.jpeg" alt="profile-image" width='100%'>
+          </div>
+          <ul class="contacts__list">
+            <li class="contact__move">
+              <span>📮</span>
+              <a href="email:starkavichi@gmail.com">starkavichi@gmail.com</a>
+            </li>
+            <li class="contact__move">
+              <span>📞</span>
+              <a href="tel:0000000000">0000 0000 0000</a>
+            </li>
+            <li class="contact__move">
+              <span>💻</span>
+              <a href="https://github.com/Avichez"> GitHub Link</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <section class="about" id="blockAbout">
+          <h3 class='highlight'>About Me</h3>
+          <p>I’d describe myself as independent and self-motivated, let me give you a brief description(story). I
+            have been interested in Web development since school, always keeping an eye on new web technologies,
+            so I decided to change my profession, and begin my journey toward
+            the IT direction, to learn the most demanded technologies that need for creating such different and
+            interesting projects.</p>
+        </section>
+        <div class="column__wrapper">
+          <section class="skills" id="blockSkills">
+            <h3>My Skills</h3>
+            <div class="skills__block">
+              <p class="skills__category">FRONT</p>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3/SCSS</li>
+                <li>JS(ES6+)</li>
+                <li>ReactJS</li>
+              </ul>
+            </div>
+            <div class="skills__block">
+              <p class="skills__category">DESIGN</p>
+              <ul>
+                <li>Figma</li>
+                <li>Photoshop</li>
+              </ul>
+            </div>
+            <div class="skills__block">
+              <p class="skills__category">OTHER</p>
+              <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
+          </section>
+          <section class="education" id="blockEducation">
+            <h3>Education</h3>
+            <div class="education__title">
+              <h4>Odessa Maritime College of Technical Fleet</h4>
+              <p>2015</p>
+            </div>
+            <div class="education__title">
+              <h4>Kherson State Maritime Academy (Bachelor)</h4>
+              <p>2018</p>
+            </div>
+          </section>
+          <section class="courses" id="blockCourses">
+            <h3>Courses</h3>
+            <ul class="courses__list">
+              <li>RSSchool</li>
+              <li>Udemy</li>
+              <li>JS learn.javascript.ru</li>
+              <li>CodeWars</li>
+              <li>YouTube</li>
+            </ul>
+          </section>
+          <section class="languages" id="blockLanguages">
+            <h3>Languages</h3>
+            <ul class="languages__list">
+              <li>
+                <p><b>UKRAINIAN</b> - Native</p>
+              </li>
+              <li>
+                <p><b>RUSSIAN</b> - Native</p>
+              </li>
+              <li>
+                <p><b>ENGLISH</b> - Intermediate level</p>
+              </li>
+            </ul>
+          </section>
+          <section class="code__example" id="blockCode">
+            <h3>Code Example</h3>
+            <pre>
+                <code>
+                  const binaryArrayToNumber = (arr) => {
+                    let arrReverse = arr.reverse();
+                    let result = 0;
 
+                    for (let i = 0; i &lt; arrReverse.length; i++) {
+                      if (i === 0) {
+                        if (arrReverse[i] === 1) {
+                          result += 1;
+                        }
+                      } else if (arrReverse[i] === 1) {
+                        result += Math.pow(2, i);
+                      }
+                    }
+                    return result;
+                  };
+                  
+                  // or just
+                  const binaryArrayToNumber = (arr) => parseInt(arr.join(''), 2);
+                  
+                  console.log(binaryArrayToNumber([0, 1, 1, 0]));
+                </code>
+              </pre>
+          </section>
+        </div>
+      </main>
+    </div>
   </div>
 </body>
 
