@@ -11,3 +11,16 @@ function parallax(e) {
     layer.style.transform = `translate(${x}px) translateY(${y}px)`;
   });
 }
+
+// function active Link
+const linkItems = document.querySelectorAll(".nav__list .nav__item a");
+const h3Tags = document.querySelectorAll("section h3");
+
+linkItems.forEach((item) => {
+  item.addEventListener("click", function (e) {
+    for (let i = 0; i < linkItems.length; i++) {
+      linkItems[i].classList.remove("active");
+    }
+    this.classList.add("active");
+  });
+});
