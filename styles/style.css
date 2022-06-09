@@ -48,6 +48,14 @@ a {
   overflow: hidden;
 }
 
+.container .bg-layer {
+  overflow: visible;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+}
+
 /* Header part */
 header {
   padding-top: 80px;
