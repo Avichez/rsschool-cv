@@ -266,3 +266,40 @@ footer span {
   font-size: 18px;
 }
 /* footer part end */
+
+/* Animation profile-image  */
+.profile__image {
+  animation: dropOut 1s ease;
+}
+
+@keyframes dropOut {
+  from {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation contacts */
+.contact__move {
+  animation: dropIn 2.5s ease;
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(-10%);
+  }
+  100% {
+  }
+}
