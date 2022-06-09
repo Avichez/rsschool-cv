@@ -254,6 +254,28 @@ section {
 }
 /* main part end */
 
+/* code styling */
+code {
+  background-color: #e3e3e3 !important;
+  box-shadow: inset 1px 10px 10px #c3c1c1;
+  font-size: 14px;
+  border-radius: 2rem;
+}
+
+.code__example {
+  flex: 1 1;
+}
+
+.hljs-number,
+.hljs-variable {
+  color: #b7791f;
+}
+
+.hljs-title {
+  color: #4299e1;
+}
+/* code styling end */
+
 /* footer part */
 footer {
   padding: 0 10px 20px 10px;
